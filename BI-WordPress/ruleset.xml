@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="BI-WordPress" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+  <description>The Bartlett Interactive WordPress coding standard.</description>
+
+  <exclude-pattern>*.css</exclude-pattern>
+  <exclude-pattern>*.js</exclude-pattern>
+  <exclude-pattern>*/node_modules/*</exclude-pattern>
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+
+  <config name="testVersion" value="8.1-" />
+
+  <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
+
+  <rule ref="Squiz.Commenting.FunctionComment">
+    <properties>
+      <property name="skipIfInheritdoc" value="true" />
+    </properties>
+  </rule>
+
+  <rule ref="WordPress">
+    <exclude name="PEAR.Functions.FunctionCallSignature" />
+    <exclude name="Squiz.Commenting.FileComment.Missing" />
+    <exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
+    <exclude name="WordPress.Files.FileName" />
+  </rule>
+
+  <rule ref="PHPCompatibilityWP" />
+
+  <rule ref="PEAR.Functions.FunctionCallSignature">
+    <properties>
+      <property name="requiredSpacesAfterOpen" value="1" />
+      <property name="requiredSpacesBeforeClose" value="1" />
+    </properties>
+  </rule>
+</ruleset>

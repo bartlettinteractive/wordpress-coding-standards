@@ -1,0 +1,17 @@
+{
+  "name": "bartlettinteractive/wordpress-coding-standards",
+  "description": "The Bartlett Interactive WordPress coding standard.",
+  "type": "phpcodesniffer-standard",
+  "license": "MIT",
+  "require": {
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "dev-develop"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "sort-packages": true
+  }
+}
