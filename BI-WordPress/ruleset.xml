@@ -21,6 +21,7 @@
     <exclude name="Squiz.Commenting.FileComment.Missing" />
     <exclude name="Universal.Arrays.DisallowShortArraySyntax.Found" />
     <exclude name="WordPress.Files.FileName" />
+    <exclude name="WordPress.PHP.YodaConditions" />
   </rule>
 
   <rule ref="PHPCompatibilityWP" />
