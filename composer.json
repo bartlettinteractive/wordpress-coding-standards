@@ -6,7 +6,7 @@
   "require": {
     "phpcompatibility/phpcompatibility-wp": "^2.1",
     "squizlabs/php_codesniffer": "^3.7",
-    "wp-coding-standards/wpcs": "dev-develop"
+    "wp-coding-standards/wpcs": "^3.1"
   },
   "config": {
     "allow-plugins": {
