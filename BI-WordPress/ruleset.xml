@@ -11,6 +11,12 @@
 
   <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
 
+  <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
+    <properties>
+      <property name="caseSensitive" value="true"/>
+    </properties>
+  </rule>
+
   <rule ref="Squiz.Commenting.FunctionComment">
     <properties>
       <property name="skipIfInheritdoc" value="true" />
