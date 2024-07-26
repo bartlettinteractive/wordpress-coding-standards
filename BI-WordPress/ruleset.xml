@@ -11,7 +11,7 @@
 
   <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
 
-  <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
+  <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses">
     <properties>
       <property name="caseSensitive" value="true"/>
     </properties>
